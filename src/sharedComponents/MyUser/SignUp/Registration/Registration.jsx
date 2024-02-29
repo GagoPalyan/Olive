@@ -23,7 +23,7 @@ function Registration({ setPopup, setSignUpPage }) {
   });
 
   const singUp = (data) => {
-    dispatch(setProfile(data));
+    dispatch(setProfile({ ...data, balance: 100 }));
     createUser(data);
     setPopup(false);
   };

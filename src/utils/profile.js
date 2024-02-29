@@ -19,7 +19,7 @@ export function createUser(user) {
     localStorage.setItem("user", JSON.stringify(user));
   } else {
     usersList = JSON.parse(localStorage.getItem("usersList"));
-    user = { ...user, id: usersList.length + 1 };
+    user = { ...user, id: usersList.length + 1, balance: 100 };
     usersList.push(user);
     localStorage.setItem("usersList", JSON.stringify(usersList));
     localStorage.setItem("user", JSON.stringify(user));

@@ -1,5 +1,4 @@
 import style from "./MyUser.module.css";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../features/profile/profileSlice";
 import SignUp from "./SignUp/SignUp";

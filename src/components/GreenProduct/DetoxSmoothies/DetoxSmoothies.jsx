@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   changeFilter,
-  changeSearch,
   selectFilter,
   selectProducts,
   selectSearch,
@@ -11,7 +10,6 @@ import {
 
 import style from "./DetoxSmoothies.module.css";
 import Title from "../../../sharedComponents/Title/Title";
-import ProductList from "../../../utils/ProductList";
 import Cart from "../../../sharedComponents/Cart/Cart";
 import DetoxSmoothiesFilter from "./DetoxSmoothiesFilter/DetoxSmoothiesFilter";
 import { searchFunc } from "../../../utils/search";

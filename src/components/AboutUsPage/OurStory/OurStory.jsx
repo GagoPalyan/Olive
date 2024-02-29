@@ -9,7 +9,6 @@ function OurStory() {
       caption="our story"
       text="From a blog to online stor!"
       titlePosition="left"
-      type={1}
     >
       <p>
         The Olive first opened it’s doors in November 2023. It all started as a

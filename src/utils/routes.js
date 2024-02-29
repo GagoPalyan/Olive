@@ -1,6 +1,8 @@
 import AboutUs from "../components/AboutUsPage/AboutUs";
 import FAQ from "../components/AboutUsPage/FAQ/FAQ";
+import BlogArticle from "../components/BlogArticle/BlogArticle";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import ExpertAdvicea from "../components/ExpertAdvice/ExpertAdvicea";
 import GreenProduct from "../components/GreenProduct/GreenProduct";
 import Home from "../components/HomePage/Home";
 import ProductPage from "../components/ProductPage/ProductPage";
@@ -27,7 +29,12 @@ import {
 export const routes = [
   { id: 1, path: HOME_PAGE, element: <Home />, name: "HOME" },
   { id: 2, path: ABOUT_US_PAGE, element: <AboutUs />, name: "ABOUT" },
-  { id: 3, path: EXPERT_ADVICE_PAGE, element: null, name: "EXPERT ADVICE" },
+  {
+    id: 3,
+    path: EXPERT_ADVICE_PAGE,
+    element: <ExpertAdvicea />,
+    name: "EXPERT ADVICE",
+  },
   {
     id: 4,
     path: GREEN_PRODUCT_PAGE,
@@ -43,6 +50,6 @@ export const routes = [
   { id: 11, path: SHOPING_PAGE, element: <Shoping />, name: "SHOPING PAGE" },
   { id: 12, path: DASHBOARD_PAGE, element: null, name: "DASHBOARD" },
   { id: 13, path: GREEN_SHOP_PAGE, element: null, name: "GREEN SHOP" },
-  { id: 14, path: BLOG_PAGE, element: null, name: "BLOG" },
+  { id: 14, path: BLOG_PAGE, element: <BlogArticle />, name: "BLOG" },
   { id: 15, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
 ];

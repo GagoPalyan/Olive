@@ -4,6 +4,8 @@ import { selectCart } from "../../../features/products/productsSlice";
 import YourCart from "../../../sharedComponents/YourCart/YourCart";
 import { useEffect, useState } from "react";
 import { promoCode } from "../../../utils/promoCode";
+import { NavLink } from "react-router-dom";
+import { PAYMENT_INFO } from "../../../utils/URL";
 
 function ShopingCart() {
   const cartList = useSelector(selectCart);
@@ -13,11 +15,6 @@ function ShopingCart() {
 
   const [promo, setPromo] = useState("");
 
-  const applyPromo = () => {
-    let code = promoCode.find((code) => code == promo);
-    code && setShipping("0.00");
-  };
-
   useEffect(() => {
     let total = 0;
     cartList.forEach((elem) => {
@@ -25,6 +22,8 @@ function ShopingCart() {
     });
     setSubtotal(+total);
   }, [cartList]);
+
+  
 
   return (
     <section className={style.content}>
@@ -100,7 +99,9 @@ function ShopingCart() {
               Apply
             </button>
           </div>
-          <button className={style.buyNow}>Buy Now</button>
+          <NavLink to={PAYMENT_INFO} className={style.buyNow}>
+            Buy Now
+          </NavLink>
           <a
             target="_blank"
             href="https://www.apple.com/apple-pay/"

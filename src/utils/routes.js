@@ -6,6 +6,7 @@ import ExpertAdvicea from "../components/ExpertAdvice/ExpertAdvicea";
 import GreenProduct from "../components/GreenProduct/GreenProduct";
 import Home from "../components/HomePage/Home";
 import ProductPage from "../components/ProductPage/ProductPage";
+import CardMenu from "../components/ShopingPage/CardMenu/CardMenu";
 import Shoping from "../components/ShopingPage/Shoping";
 
 import {
@@ -21,6 +22,7 @@ import {
   HELTHY_DIET_PAGE,
   HOME_PAGE,
   LIFESTYLE_PAGE,
+  PAYMENT_INFO,
   PRODUCT_PAGE,
   SHOPING_PAGE,
   SING_IN_PAGE,
@@ -51,5 +53,11 @@ export const routes = [
   { id: 12, path: DASHBOARD_PAGE, element: null, name: "DASHBOARD" },
   { id: 13, path: GREEN_SHOP_PAGE, element: null, name: "GREEN SHOP" },
   { id: 14, path: BLOG_PAGE, element: <BlogArticle />, name: "BLOG" },
-  { id: 15, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
+  {
+    id: 15,
+    path: PAYMENT_INFO,
+    element: <CardMenu />,
+    name: "PAYMENT INFORMATION",
+  },
+  { id: 16, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
 ];

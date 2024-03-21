@@ -10,6 +10,16 @@ export const addCartReducer = (state, action) => {
   state.cart.push(action.payload);
 };
 
+export const updateCartReducer = (state, action) => {
+  const [id, count] = action.payload;
+  let findedProduct = state.cart.find((pr) => pr.id == id);
+  findedProduct.qnt = count;
+};
+
 export const removeCartReducer = (state, action) => {
   state.cart = state.cart.filter((obj) => obj.id !== action.payload);
+};
+
+export const CleanCartReducer = (state, action) => {
+  state.cart = action.payload;
 };

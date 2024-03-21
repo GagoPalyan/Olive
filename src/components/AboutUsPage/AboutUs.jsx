@@ -16,8 +16,6 @@ function AboutUs() {
       />
       <OurStory />
       <DoYouKnow />
-      <FAQ />
-      <ContactUs />
     </main>
   );
 }

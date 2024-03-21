@@ -6,14 +6,33 @@ import {
   addCart,
   removeCart,
   selectCart,
+  updateCart,
 } from "../../../features/products/productsSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function TheProduct({ product }) {
   const dispatch = useDispatch();
   const cartList = useSelector(selectCart);
 
   const [qnt, setQnt] = useState(1);
+  const [currentProduct, setCurrentProduct] = useState({});
+
+  useEffect(() => {
+    let currentPrd = cartList.find((obj) => obj.id == product.id);
+    if (currentPrd) {
+      setCurrentProduct(currentPrd);
+      setQnt(currentPrd.qnt);
+    } else {
+      setCurrentProduct({});
+      setQnt(1);
+    }
+  }, [product, cartList]);
+
+  useEffect(() => {
+    if (Object.keys(currentProduct).length > 0) {
+      dispatch(updateCart([currentProduct.id, qnt]));
+    }
+  }, [qnt]);
 
   return (
     <section className={style.content}>

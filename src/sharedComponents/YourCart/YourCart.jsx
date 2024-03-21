@@ -2,13 +2,17 @@ import { NavLink } from "react-router-dom";
 import style from "./YourCart.module.css";
 import Quantity from "../Quantity/Quantity";
 import { useDispatch } from "react-redux";
-import { removeCart } from "../../features/products/productsSlice";
-import { useState } from "react";
+import { removeCart, updateCart } from "../../features/products/productsSlice";
+import { useEffect, useState } from "react";
 
 function YourCart({ product }) {
   const user = JSON.parse(localStorage.getItem("user"));
   const dispatch = useDispatch();
   const [qnt, setQnt] = useState(product.qnt);
+
+  useEffect(() => {
+    dispatch(updateCart([product.id, qnt]));
+  }, [qnt]);
 
   return (
     <div className={style.cart}>

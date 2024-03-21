@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={style.Footer}>
       <div className={style.footerContent}>
-        <Navigation menuList={[2, 12, 13]} txtColor={"white"} />
+        <Navigation menuList={[2, 3, 4]} txtColor={"white"} />
         <div
           style={{
             width: "129px",
@@ -23,7 +23,7 @@ function Footer() {
             justifyContent: "space-between",
           }}
         >
-          <Navigation menuList={[8, 9]} txtColor={"white"} />
+          <Navigation menuList={[7, 6]} txtColor={"white"} />
           <div
             style={{
               width: "250px",

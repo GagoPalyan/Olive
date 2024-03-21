@@ -7,12 +7,12 @@ function Header() {
   return (
     <header className={style.header}>
       <div className={style.headerContent}>
-        <div style={{ width: "671px" }}>
-          <Navigation menuList={[2, 3, 4, 6]} />
+        <div style={{ width: "471px" }}>
+          <Navigation menuList={[2, 3, 4]} />
         </div>
         <Logo color="#D6822A" />
-        <div style={{ width: "504px" }}>
-          <Navigation menuList={[7, 8, 9, 10]} />
+        <div style={{ width: "380px" }}>
+          <Navigation menuList={[6, 9, 7]} />
         </div>
         <IconPages />
       </div>

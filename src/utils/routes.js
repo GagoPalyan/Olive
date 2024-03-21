@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUsPage/AboutUs";
+import ContactUs from "../components/AboutUsPage/ContactUs/ContactUs";
 import FAQ from "../components/AboutUsPage/FAQ/FAQ";
 import BlogArticle from "../components/BlogArticle/BlogArticle";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
@@ -12,20 +13,15 @@ import Shoping from "../components/ShopingPage/Shoping";
 import {
   ABOUT_US_PAGE,
   BLOG_PAGE,
-  DASHBOARD_PAGE,
-  DIABETS_PAGE,
+  CONTACT_US_PAGE,
   ERROR404_PAGE,
   EXPERT_ADVICE_PAGE,
   FAQ_PAGE,
   GREEN_PRODUCT_PAGE,
-  GREEN_SHOP_PAGE,
-  HELTHY_DIET_PAGE,
   HOME_PAGE,
-  LIFESTYLE_PAGE,
   PAYMENT_INFO,
   PRODUCT_PAGE,
   SHOPING_PAGE,
-  SING_IN_PAGE,
 } from "./URL";
 
 export const routes = [
@@ -44,20 +40,20 @@ export const routes = [
     name: "GREEN PRODUCT",
   },
   { id: 5, path: PRODUCT_PAGE, element: <ProductPage />, name: "PRODUCT PAGE" },
-  { id: 6, path: HELTHY_DIET_PAGE, element: null, name: "HELTHY DIET" },
-  { id: 7, path: LIFESTYLE_PAGE, element: null, name: "LIFESTYLE" },
-  { id: 8, path: DIABETS_PAGE, element: null, name: "DIABETS" },
-  { id: 9, path: FAQ_PAGE, element: <FAQ />, name: "FAQ" },
-  { id: 10, path: SING_IN_PAGE, element: null, name: "SIGN IN" },
-  { id: 11, path: SHOPING_PAGE, element: <Shoping />, name: "SHOPING PAGE" },
-  { id: 12, path: DASHBOARD_PAGE, element: null, name: "DASHBOARD" },
-  { id: 13, path: GREEN_SHOP_PAGE, element: null, name: "GREEN SHOP" },
-  { id: 14, path: BLOG_PAGE, element: <BlogArticle />, name: "BLOG" },
+  // { id: 6, path: HELTHY_DIET_PAGE, element: null, name: "HELTHY DIET" },
+  { id: 6, path: CONTACT_US_PAGE, element: <ContactUs />, name: "CONTACT US" },
+  // { id: 8, path: DIABETS_PAGE, element: null, name: "DIABETS" },
+  { id: 7, path: FAQ_PAGE, element: <FAQ />, name: "FAQ" },
+  // { id: 10, path: SING_IN_PAGE, element: null, name: "SIGN IN" },
+  { id: 8, path: SHOPING_PAGE, element: <Shoping />, name: "SHOPING PAGE" },
+  // { id: 12, path: DASHBOARD_PAGE, element: null, name: "DASHBOARD" },
+  // { id: 13, path: GREEN_SHOP_PAGE, element: null, name: "GREEN SHOP" },
+  { id: 9, path: BLOG_PAGE, element: <BlogArticle />, name: "BLOG" },
   {
-    id: 15,
+    id: 10,
     path: PAYMENT_INFO,
     element: <CardMenu />,
     name: "PAYMENT INFORMATION",
   },
-  { id: 16, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
+  { id: 11, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
 ];

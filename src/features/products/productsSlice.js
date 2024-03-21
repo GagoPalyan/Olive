@@ -1,10 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import ProductList from "../../utils/ProductList";
 import {
+  CleanCartReducer,
   addCartReducer,
   changeFilterReducer,
   changeSearchReducer,
   removeCartReducer,
+  updateCartReducer,
 } from "./productsReducers";
 
 const initialState = {
@@ -22,13 +24,21 @@ export const productsSlice = createSlice({
     changeFilter: changeFilterReducer,
     changeSearch: changeSearchReducer,
     addCart: addCartReducer,
+    updateCart: updateCartReducer,
     removeCart: removeCartReducer,
+    cleanCart: CleanCartReducer,
   },
   extraReducers: (builder) => {},
 });
 
-export const { changeFilter, changeSearch, addCart, removeCart } =
-  productsSlice.actions;
+export const {
+  changeFilter,
+  changeSearch,
+  addCart,
+  removeCart,
+  updateCart,
+  cleanCart,
+} = productsSlice.actions;
 
 export const selectProducts = (state) => state.products.list;
 export const selectFilter = (state) => state.products.filter;

@@ -4,8 +4,11 @@ import Quantity from "../../../sharedComponents/Quantity/Quantity";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addCart,
+  addFavorite,
   removeCart,
+  removeFavorite,
   selectCart,
+  selectFavorite,
   updateCart,
 } from "../../../features/products/productsSlice";
 import { useEffect, useState } from "react";
@@ -13,6 +16,7 @@ import { useEffect, useState } from "react";
 function TheProduct({ product }) {
   const dispatch = useDispatch();
   const cartList = useSelector(selectCart);
+  const favoriteList = useSelector(selectFavorite);
 
   const [qnt, setQnt] = useState(1);
   const [currentProduct, setCurrentProduct] = useState({});
@@ -126,7 +130,26 @@ function TheProduct({ product }) {
           <Quantity qnt={qnt} setQnt={setQnt} />
         </div>
         <div className={style.Add}>
-          <button className={style.addFav}>Add To Favorite</button>
+          {favoriteList.find((obj) => obj.id == product.id) ? (
+            <button
+              className={style.addFav}
+              onClick={() => {
+                dispatch(removeFavorite(product.id));
+              }}
+            >
+              Remove From Favorite
+            </button>
+          ) : (
+            <button
+              className={style.addFav}
+              onClick={() => {
+                dispatch(addFavorite({ ...product, qnt }));
+              }}
+            >
+              Add To Favorite
+            </button>
+          )}
+
           {cartList.find((obj) => obj.id == product.id) ? (
             <button
               className={style.addCart}

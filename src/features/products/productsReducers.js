@@ -23,3 +23,11 @@ export const removeCartReducer = (state, action) => {
 export const CleanCartReducer = (state, action) => {
   state.cart = action.payload;
 };
+
+export const addFavoriteReducer = (state, action) => {
+  state.favorites.push(action.payload);
+};
+
+export const removeFavoriteReducer = (state, action) => {
+  state.favorites = state.favorites.filter((obj) => obj.id !== action.payload);
+};

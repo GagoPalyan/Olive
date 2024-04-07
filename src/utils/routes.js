@@ -4,6 +4,7 @@ import FAQ from "../components/AboutUsPage/FAQ/FAQ";
 import BlogArticle from "../components/BlogArticle/BlogArticle";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import ExpertAdvicea from "../components/ExpertAdvice/ExpertAdvicea";
+import FavoritePage from "../components/FavoritePage/FavoritePage";
 import GreenProduct from "../components/GreenProduct/GreenProduct";
 import Home from "../components/HomePage/Home";
 import ProductPage from "../components/ProductPage/ProductPage";
@@ -17,6 +18,7 @@ import {
   ERROR404_PAGE,
   EXPERT_ADVICE_PAGE,
   FAQ_PAGE,
+  FAVORITE_PAGE,
   GREEN_PRODUCT_PAGE,
   HOME_PAGE,
   PAYMENT_INFO,
@@ -56,4 +58,10 @@ export const routes = [
     name: "PAYMENT INFORMATION",
   },
   { id: 11, path: ERROR404_PAGE, element: <ErrorPage />, name: "404 ERROR" },
+  {
+    id: 12,
+    path: FAVORITE_PAGE,
+    element: <FavoritePage />,
+    name: "FAVORITE PAGE",
+  },
 ];

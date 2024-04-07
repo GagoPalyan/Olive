@@ -3,9 +3,11 @@ import ProductList from "../../utils/ProductList";
 import {
   CleanCartReducer,
   addCartReducer,
+  addFavoriteReducer,
   changeFilterReducer,
   changeSearchReducer,
   removeCartReducer,
+  removeFavoriteReducer,
   updateCartReducer,
 } from "./productsReducers";
 
@@ -27,6 +29,8 @@ export const productsSlice = createSlice({
     updateCart: updateCartReducer,
     removeCart: removeCartReducer,
     cleanCart: CleanCartReducer,
+    addFavorite: addFavoriteReducer,
+    removeFavorite: removeFavoriteReducer,
   },
   extraReducers: (builder) => {},
 });
@@ -38,11 +42,14 @@ export const {
   removeCart,
   updateCart,
   cleanCart,
+  addFavorite,
+  removeFavorite,
 } = productsSlice.actions;
 
 export const selectProducts = (state) => state.products.list;
 export const selectFilter = (state) => state.products.filter;
 export const selectSearch = (state) => state.products.search;
 export const selectCart = (state) => state.products.cart;
+export const selectFavorite = (state) => state.products.favorites;
 
 export default productsSlice.reducer;

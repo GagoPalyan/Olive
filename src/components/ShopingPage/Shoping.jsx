@@ -14,7 +14,7 @@ function Shoping() {
     <>
       {cart.length ? (
         <main className={style.content}>
-          <ShopingTitle />
+          <ShopingTitle type="cart" />
           <ShopingCart />
         </main>
       ) : (

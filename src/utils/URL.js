@@ -13,4 +13,5 @@ export const DASHBOARD_PAGE = "/dashboard";
 export const GREEN_SHOP_PAGE = "/green-shop";
 export const BLOG_PAGE = "/blog";
 export const PAYMENT_INFO = "/payment-information";
+export const FAVORITE_PAGE = "/favorite-page";
 export const ERROR404_PAGE = "/*";

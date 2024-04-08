@@ -18,18 +18,12 @@
   font-weight: 400;
   line-height: 22px;
 }
-.cartType1 button {
-  border: none;
-  outline: none;
-  background-color: unset;
+.cartType1 a {
   color: #6b6b5f;
   font-family: "Hind Vadodara";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 137.5% */
-  text-decoration-line: underline;
-  cursor: pointer;
+  line-height: 22px;
 }
 
 .cartType2 {

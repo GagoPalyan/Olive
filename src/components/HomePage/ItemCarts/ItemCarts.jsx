@@ -15,7 +15,11 @@ function ItemCarts({ item, cartStyle, imgHeight = false }) {
             alt={item.text}
           />
           <h3>{item.text}</h3>
-          {cartStyle.button ? <button>Read more</button> : null}
+          {cartStyle.button ? (
+            <a target="_blank" href={cartStyle.button}>
+              Read more
+            </a>
+          ) : null}
         </div>
       );
     case 2:

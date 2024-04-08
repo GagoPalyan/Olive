@@ -2,9 +2,21 @@ import ImgContent from "../ImgContent/ImgContent";
 import style from "./ContactUs.module.css";
 import image1 from "../../../assets/About Us/fauzan-ardhi-rqclLm60c1k-unsplash.jpg";
 import PageLocation from "../../../sharedComponents/PageLocation/PageLocation";
-import { HOME_PAGE } from "../../../utils/URL";
+import { BLOG_PAGE, HOME_PAGE } from "../../../utils/URL";
+import { NavLink } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import {
+  emailValidation,
+  messageValidation,
+  nameValidation,
+} from "../../../utils/validation";
 
 function ContactUs() {
+  const {
+    register,
+    formState: { errors },
+  } = useForm({ mode: "all" });
+
   return (
     <>
       <PageLocation
@@ -23,13 +35,7 @@ function ContactUs() {
             <div className={style.socials}>
               <ul>
                 <li>
-                  <svg
-                    width="31"
-                    height="31"
-                    viewBox="0 0 31 31"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
                     <path
                       d="M24.3153 19.7407L18.285 20.918C14.2111 18.8584 11.6953 16.4918 10.231 12.8033L11.3585 6.70983L9.22788 1L3.73501 1C2.0832 1 0.782839 2.37508 1.03032 4.02016C1.64535 8.12623 3.46118 15.5726 8.7666 20.918C14.3385 26.532 22.3648 28.9679 26.7813 29.9372C28.4873 30.3105 30 28.9708 30 27.2106V21.9228L24.3153 19.7407Z"
                       stroke="#212311"
@@ -40,13 +46,7 @@ function ContactUs() {
                   </svg>
                 </li>
                 <li>
-                  <svg
-                    width="33"
-                    height="27"
-                    viewBox="0 0 33 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="33" height="27" viewBox="0 0 33 27" fill="none">
                     <path
                       d="M3.69531 5.79297L16.1463 13.2423L28.5973 5.79297"
                       stroke="#212311"
@@ -64,13 +64,7 @@ function ContactUs() {
                   </svg>
                 </li>
                 <li>
-                  <svg
-                    width="29"
-                    height="29"
-                    viewBox="0 0 29 29"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
                     <circle
                       cx="14.4848"
                       cy="14.4848"
@@ -91,13 +85,7 @@ function ContactUs() {
                   </svg>
                 </li>
                 <li>
-                  <svg
-                    width="31"
-                    height="30"
-                    viewBox="0 0 31 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="31" height="30" viewBox="0 0 31 30" fill="none">
                     <path
                       d="M15.5 29C13.5958 29 11.7103 28.6379 9.95109 27.9343C8.19187 27.2307 6.5934 26.1995 5.24695 24.8995C3.9005 23.5995 2.83244 22.0561 2.10375 20.3576C1.37505 18.659 1 16.8385 1 15C1 13.1615 1.37505 11.341 2.10375 9.64243C2.83244 7.94387 3.9005 6.40053 5.24695 5.1005C6.5934 3.80048 8.19187 2.76925 9.95109 2.06569C11.7103 1.36212 13.5958 1 15.5 1C19.3456 1 23.0338 2.475 25.753 5.10051C28.4723 7.72601 30 11.287 30 15C30 18.713 28.4723 22.274 25.753 24.8995C23.0338 27.525 19.3456 29 15.5 29ZM15.5 29V13C15.5 11.9391 15.9365 10.9217 16.7134 10.1716C17.4904 9.42143 18.5441 9 19.6429 9H20.6786M10.3214 17H20.6786"
                       stroke="#212311"
@@ -106,13 +94,7 @@ function ContactUs() {
                   </svg>
                 </li>
                 <li>
-                  <svg
-                    width="29"
-                    height="29"
-                    viewBox="0 0 29 29"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none">
                     <rect
                       x="0.620455"
                       y="0.620455"
@@ -139,19 +121,56 @@ function ContactUs() {
                 </li>
               </ul>
               <ul>
-                <li>+374 22 227 227 </li>
-                <li>infoolive@gmail.com</li>
-                <li>theoliveorganic.blog</li>
-                <li>Olive organic</li>
-                <li>olive.organic</li>
+                <li>+374 22 227 227</li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrkVlzXGfGPCJmTfjXCqtWKbtsMphjqrmvwlJsvznThsgfNdFPlfXmdwdMGRkZfhKmMVsV"
+                  >
+                    infoolive@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <NavLink to={BLOG_PAGE}>theoliveorganic.blog</NavLink>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/olive-organic"
+                  >
+                    Olive organic
+                  </a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/olive-organic/"
+                  >
+                    olive.organic
+                  </a>
+                </li>
               </ul>
             </div>
             <div className={style.getInTouch}>
               <h2>Get In Touch!</h2>
               <form>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea placeholder="Message"></textarea>
+                <input
+                  style={errors.name?.message && { borderColor: "red" }}
+                  type="text"
+                  placeholder="Name"
+                  {...register("name", nameValidation)}
+                />
+                <input
+                  style={errors.email?.message && { borderColor: "red" }}
+                  type="text"
+                  placeholder="Email"
+                  {...register("email", emailValidation)}
+                />
+                <textarea
+                  style={errors.message?.message && { borderColor: "red" }}
+                  placeholder="Message"
+                  {...register("message", messageValidation)}
+                ></textarea>
                 <button>Submite</button>
               </form>
             </div>

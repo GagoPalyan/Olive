@@ -34,6 +34,10 @@
   align-items: center;
   justify-content: start;
 }
+.content .contactUs .socials ul li a {
+  text-decoration: none;
+  color: black;
+}
 .content .contactUs .socials ul li svg {
   margin-right: 30px;
 }

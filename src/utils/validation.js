@@ -83,3 +83,11 @@ export const cardNameValidation = {
     message: "Write your name of owner",
   },
 };
+
+export const messageValidation = {
+  required: "Required Message Field",
+  minLength: {
+    value: 1,
+    message: "Invalid Message",
+  },
+};

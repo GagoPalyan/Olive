@@ -17,7 +17,7 @@ function VeryTasty() {
                 type: 1,
                 width: "418px",
                 height: "396px",
-                button: true,
+                button: item.link,
               }}
             />
           );

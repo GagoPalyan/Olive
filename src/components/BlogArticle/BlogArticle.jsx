@@ -8,8 +8,15 @@ import { Link } from "react-router-dom";
 import Title from "../../sharedComponents/Title/Title";
 import ExpertAdviceImgSection from "../ExpertAdvice/ExpertAdviceImgSection/ExpertAdviceImgSection";
 import { ExpertAdviceCartList1 } from "../ExpertAdvice/ExpertAdviceImgSection/ExpertAdviceCartList";
+import { emailValidation } from "../../utils/validation";
+import { useForm } from "react-hook-form";
 
 function BlogArticle() {
+  const {
+    register,
+    formState: { errors },
+  } = useForm({ mode: "all" });
+
   return (
     <main className={style.content}>
       <PageLocation
@@ -118,10 +125,15 @@ function BlogArticle() {
               </svg>
             </Link>
             <h2>Sign Up for the healthy newsletter</h2>
-            <div className={style.signUp}>
-              <input type="text" placeholder="Enter Your Email To Sign Up" />
+            <form className={style.signUp}>
+              <input
+                style={errors.email?.message && { borderColor: "red" }}
+                type="text"
+                placeholder="Enter Your Email To Sign Up"
+                {...register("email", emailValidation)}
+              />
               <button>Get</button>
-            </div>
+            </form>
           </div>
           <div className={style.rigthSide}>
             <OftenBreakfast />

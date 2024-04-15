@@ -1,6 +1,6 @@
 import style from "./DoYouKnow.module.css";
 import ImgContent from "../ImgContent/ImgContent";
-import ImgContent2 from "../../../assets/About Us/imgContent2.png";
+import ImgContent2 from "../../../assets/Desktop/About Us/imgContent2.png";
 
 function DoYouKnow() {
   return (

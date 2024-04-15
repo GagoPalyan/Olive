@@ -1,6 +1,6 @@
 import ImgContent from "../ImgContent/ImgContent";
 import style from "./ContactUs.module.css";
-import image1 from "../../../assets/About Us/fauzan-ardhi-rqclLm60c1k-unsplash.jpg";
+import image1 from "../../../assets/Desktop/About Us/fauzan-ardhi-rqclLm60c1k-unsplash.jpg";
 import PageLocation from "../../../sharedComponents/PageLocation/PageLocation";
 import { BLOG_PAGE, HOME_PAGE } from "../../../utils/URL";
 import { NavLink } from "react-router-dom";

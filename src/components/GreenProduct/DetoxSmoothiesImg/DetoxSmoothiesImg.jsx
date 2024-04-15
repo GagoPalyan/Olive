@@ -1,5 +1,5 @@
 import style from "./DetoxSmoothiesImg.module.css";
-import image from "../../../assets/Green Product/Group 94.png";
+import image from "../../../assets/Desktop/Green Product/Group 94.png";
 
 function DetoxSmoothiesImg() {
   return (

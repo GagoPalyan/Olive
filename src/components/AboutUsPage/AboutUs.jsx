@@ -4,8 +4,6 @@ import { HOME_PAGE } from "../../utils/URL";
 import OurStory from "./OurStory/OurStory";
 
 import DoYouKnow from "./DoYouKnow/DoYouKnow";
-import FAQ from "./FAQ/FAQ";
-import ContactUs from "./ContactUs/ContactUs";
 
 function AboutUs() {
   return (

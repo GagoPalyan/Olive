@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import style from "./ErrorPage.module.css";
 import { HOME_PAGE } from "../../utils/URL";
-import error404 from "../../assets/404/404.png";
+import error404 from "../../assets/Desktop/404/404.png";
 
 function ErrorPage() {
   return (

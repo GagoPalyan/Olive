@@ -1,6 +1,6 @@
-import img1 from "../../../../assets/Home/Very Tasty/1.png";
-import img2 from "../../../../assets/Home/Very Tasty/2.png";
-import img3 from "../../../../assets/Home/Very Tasty/3.png";
+import img1 from "../../../../assets/Desktop/Home/Very Tasty/1.png";
+import img2 from "../../../../assets/Desktop/Home/Very Tasty/2.png";
+import img3 from "../../../../assets/Desktop/Home/Very Tasty/3.png";
 
 const VeryTastyList = [
   {

@@ -1,5 +1,5 @@
 import style from "./WelcomExpertAdvice.module.css";
-import img1 from "../../../assets/ExpertAdvicea/Rectangle 217.png";
+import img1 from "../../../assets/Desktop/ExpertAdvicea/Rectangle 217.png";
 
 function WelcomExpertAdvice() {
   return (

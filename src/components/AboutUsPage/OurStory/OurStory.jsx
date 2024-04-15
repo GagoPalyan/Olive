@@ -1,6 +1,6 @@
 import ImgContent from "../ImgContent/ImgContent";
 
-import imgContent1 from "../../../assets/About Us/imgContent1.png";
+import imgContent1 from "../../../assets/Desktop/About Us/imgContent1.png";
 
 function OurStory() {
   return (

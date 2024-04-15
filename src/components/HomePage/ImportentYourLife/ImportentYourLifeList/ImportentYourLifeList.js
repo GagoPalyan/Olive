@@ -1,7 +1,7 @@
-import img1 from "../../../../assets/Home/ImportentYourLife/1.png";
-import img2 from "../../../../assets/Home/ImportentYourLife/2.png";
-import img3 from "../../../../assets/Home/ImportentYourLife/3.png";
-import img4 from "../../../../assets/Home/ImportentYourLife/4.png";
+import img1 from "../../../../assets/Desktop/Home/ImportentYourLife/1.png";
+import img2 from "../../../../assets/Desktop/Home/ImportentYourLife/2.png";
+import img3 from "../../../../assets/Desktop/Home/ImportentYourLife/3.png";
+import img4 from "../../../../assets/Desktop/Home/ImportentYourLife/4.png";
 
 const ImportentYourLifeList = [
   {

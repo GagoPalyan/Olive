@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import style from "./EatingBreakfast.module.css";
-import img1 from "../../../assets/ExpertAdvicea/Rectangle 301.png";
+import img1 from "../../../assets/Desktop/ExpertAdvicea/Rectangle 301.png";
 import { BLOG_PAGE } from "../../../utils/URL";
 
 function EatingBreakfast() {

@@ -1,11 +1,11 @@
-import img1 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 214.png";
-import img2 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 216.png";
-import img3 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 215.png";
-import img4 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 2.png";
-import img5 from "../../../assets/ExpertAdvicea/ImgList/unsplash_-FKE4iLtDUo.png";
-import img6 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 210.png";
-import img7 from "../../../assets/ExpertAdvicea/ImgList/Rectangle 316.png";
-import img8 from "../../../assets/ExpertAdvicea/ImgList/unsplash_VP1YuuSnmVQ.png";
+import img1 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 214.png";
+import img2 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 216.png";
+import img3 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 215.png";
+import img4 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 2.png";
+import img5 from "../../../assets/Desktop/ExpertAdvicea/ImgList/unsplash_-FKE4iLtDUo.png";
+import img6 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 210.png";
+import img7 from "../../../assets/Desktop/ExpertAdvicea/ImgList/Rectangle 316.png";
+import img8 from "../../../assets/Desktop/ExpertAdvicea/ImgList/unsplash_VP1YuuSnmVQ.png";
 
 export const ExpertAdviceCartList1 = [
   {

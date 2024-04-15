@@ -1,8 +1,8 @@
 import style from "./BlogArticle.module.css";
 import PageLocation from "../../sharedComponents/PageLocation/PageLocation";
 import { HOME_PAGE, EXPERT_ADVICE_PAGE } from "../../utils/URL";
-import img1 from "../../assets/BlogArticle/Group 102.png";
-import img2 from "../../assets/BlogArticle/Rectangle 215.png";
+import img1 from "../../assets/Desktop/BlogArticle/Group 102.png";
+import img2 from "../../assets/Desktop/BlogArticle/Rectangle 215.png";
 import OftenBreakfast from "./OftenBreakfast/OftenBreakfast";
 import { Link } from "react-router-dom";
 import Title from "../../sharedComponents/Title/Title";

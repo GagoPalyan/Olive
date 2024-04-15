@@ -1,15 +1,15 @@
-import img1 from "../assets/ProductList/Top view drink and cherries arrangement.png";
-import img2 from "../assets/ProductList/Group 47.png";
-import img3 from "../assets/ProductList/Rectangle 167.png";
-import img4 from "../assets/ProductList/Flat lay detox fruit drink.png";
-import img5 from "../assets/ProductList/Top view lemonade surrounded by lemons.png";
-import img6 from "../assets/ProductList/Group 44.png";
-import img7 from "../assets/ProductList/Rectangle 168.png";
-import img8 from "../assets/ProductList/Rectangle 169.png";
-import img9 from "../assets/ProductList/Group 7.png";
-import img10 from "../assets/ProductList/Rectangle 297.png";
-import img11 from "../assets/ProductList/Rectangle 301.png";
-import img12 from "../assets/ProductList/Rectangle 298.png";
+import img1 from "../assets/Desktop/ProductList/Top view drink and cherries arrangement.png";
+import img2 from "../assets/Desktop/ProductList/Group 47.png";
+import img3 from "../assets/Desktop/ProductList/Rectangle 167.png";
+import img4 from "../assets/Desktop/ProductList/Flat lay detox fruit drink.png";
+import img5 from "../assets/Desktop/ProductList/Top view lemonade surrounded by lemons.png";
+import img6 from "../assets/Desktop/ProductList/Group 44.png";
+import img7 from "../assets/Desktop/ProductList/Rectangle 168.png";
+import img8 from "../assets/Desktop/ProductList/Rectangle 169.png";
+import img9 from "../assets/Desktop/ProductList/Group 7.png";
+import img10 from "../assets/Desktop/ProductList/Rectangle 297.png";
+import img11 from "../assets/Desktop/ProductList/Rectangle 301.png";
+import img12 from "../assets/Desktop/ProductList/Rectangle 298.png";
 
 const ProductList = [
   {

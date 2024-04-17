@@ -50,4 +50,13 @@
 }
 .cart .nameBtn .remove {
   border: 1.01px solid greenyellow;
+}
+
+@media screen and (max-width: 992px) {
+  .cart {
+    margin: 10px;
+  }
+  .cart img {
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=Cart.module.css.map */

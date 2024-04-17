@@ -51,3 +51,12 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .cart {
+    margin: 10px;
+    img {
+      border-radius: 20px;
+    }
+  }
+}

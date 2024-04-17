@@ -60,3 +60,22 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    .list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
